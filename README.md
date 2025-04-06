@@ -39,6 +39,9 @@ To be added later.
    - Place all team photos or graphics in the `images/` folder.
    - Use 1:1 or rectangular dimensions as needed.
 
+4. **Google form**
+   - keep the width of the google form on contact us page to "100%" when changed or altered.
+
 ## 🚀 Features
 
 - Modular structure using PHP includes

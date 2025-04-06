@@ -283,3 +283,61 @@
 .pub-list li {
   margin-bottom: 1rem;
 }
+
+
+/* Technologies Section */
+.technology-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.technology-section h3 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #cce0f5;
+  padding-bottom: 0.5rem;
+}
+
+.tech-subsection {
+  margin-bottom: 2rem;
+}
+
+.tech-subsection h4 {
+  font-size: 1.4rem;
+  color: #005288;
+  margin-bottom: 0.75rem;
+}
+
+.tech-subsection p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.tech-subsection a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.tech-subsection a:hover {
+  text-decoration: underline;
+}
+
+/* List for R-packages */
+.pub-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.pub-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.pub-list strong {
+  color: #003366;
+}
