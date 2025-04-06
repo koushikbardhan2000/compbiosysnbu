@@ -258,3 +258,28 @@
   color: #333;
   line-height: 1.6;
 }
+
+
+
+/* Publication categories */
+.pub-category {
+  margin-bottom: 2rem;
+}
+
+.pub-category h4 {
+  color: #005288;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #cce0f5;
+  padding-bottom: 0.3rem;
+}
+
+.pub-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.pub-list li {
+  margin-bottom: 1rem;
+}
