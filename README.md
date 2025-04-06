@@ -48,10 +48,10 @@ To be added later.
 
 ## ✅ To-Do / Future Ideas
 
-- [ ] Add Research Projects gallery
-- [ ] Integrate interactive tools or data visualizations
-- [ ] Add publication filters and PDF downloads
-- [ ] Implement a contact or inquiry form
+- [ ] Add Research Projects gallery and lab photo gallery
+- [ ] Integrate developed tools
+- [ ] Add publication and PDF downloads
+- [ ] Add/modify the contact us form on the contact us page
 
 ---
 
