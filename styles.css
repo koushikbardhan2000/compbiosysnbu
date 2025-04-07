@@ -341,3 +341,108 @@
 .pub-list strong {
   color: #003366;
 }
+
+
+
+/* ---------- Responsive Layout Enhancements ---------- */
+
+/* Adjust main container on small screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  .sidebar li {
+    margin: 0.5rem 0;
+    text-align: center;
+    flex: 1 1 100px;
+  }
+
+  .sidebar li.active {
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 8px;              /* Reduce padding to decrease height */
+    border-radius: 5px;
+    display: flex;                 /* Flexbox to center text */
+    align-items: center;          /* Vertically center */
+    justify-content: center;      /* Horizontally center */
+    height: 120%;                 /* Set the height as % and not px to adjust more effeciently */
+    line-height: normal;          /* Reset any inherited line height */
+    
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  header h2,
+  header h3 {
+    font-size: 18px;
+  }
+
+  .page-title h2 {
+    font-size: 28px;
+  }
+
+  .leader-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .with-photo img,
+  .leader-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .member-with-photo img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .technology-section {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* ---------- Improve touch area and spacing ---------- */
+.sidebar li,
+.sidebar a {
+  padding: 8px 10px;
+  display: block;
+}
+
+main h3,
+main h4 {
+  font-size: 1.25rem;
+}
+
+footer {
+  padding: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Optional: Slight hover effect on nav items */
+.sidebar li:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
