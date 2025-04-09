@@ -1,27 +1,35 @@
-# Bioinformatics Research Lab Website
+# 🧬 Bioinformatics Research Lab Website
 
 This is a simple, responsive academic website built using **HTML**, **CSS**, and **PHP includes**. It showcases research focus areas, the research team, publications, technologies used, and student dissertation work.
 
+---
+
 ## 🔍 Project Overview
 
-The website is intended for an academic or research group working in:
-- Systems Biology
-- Biological Network Analysis
-- Structural Bioinformatics
-- Molecular Modeling and Docking
-- Machine Learning and Artificial Intelligence in Biology
+The website is intended for an academic or research group working in the fields of:
+
+- Systems Biology  
+- Biological Network Analysis  
+- Structural Bioinformatics  
+- Molecular Modeling and Docking  
+- Machine Learning and Artificial Intelligence in Biology  
+
+---
 
 ## 📁 Project Structure
 
 To be added later.
 
+---
 
 ## 🧰 Technologies Used
 
-- HTML5 for content structure
-- CSS3 for layout and design
-- PHP for modular page construction (header/footer includes)
-- Responsive layout using CSS Grid and Flexbox
+- **HTML5** – Content structure  
+- **CSS3** – Styling, layout, and responsiveness  
+- **PHP** – Modular page construction (headers, footers)  
+- **CSS Grid & Flexbox** – For responsive layout design  
+
+---
 
 ## 📝 How to Use / Customize
 
@@ -30,33 +38,67 @@ To be added later.
    - Modify team info, photos, and links in `research_team.php`.
 
 2. **Update Styles**
-   - Use `css/style.css` to control colors, layout, spacing, etc.
+   - Edit the `css/style.css` file to change colors, spacing, layout, etc.
 
 3. **Add New Pages**
-   - Duplicate a `template.html` file and edit the main content along with other sections commented on the file.
+   - Duplicate `template.html` and update content inside.
 
-4. **Images**
-   - Place all team photos or graphics in the `images/` folder.
-   - Use 1:1 or rectangular dimensions as needed.
+4. **Manage Images**
+   - Place team photos or graphics in the `images/` folder.
+   - Use either square (1:1) or rectangular dimensions as required.
 
-4. **Google form**
-   - keep the width of the google form on contact us page to "100%" when changed or altered.
+5. **Contact Form**
+   - Ensure embedded Google Forms have `width="100%"` for responsiveness.
 
+---
+## ⚙️ Deployment with `deploy_html.sh`
+
+To simplify deployments from the Git repository to the live server root (`/var/www/html/`), a script named `deploy_html.sh` is provided.
+
+### 📂 Folder Structure
+
+- Git-managed website code: `/home/ksk/compbiosysnbu-1/`
+- Server root directory: `/var/www/html/`
+
+### 🔁 Workflow
+
+Each time changes are pulled from Git:
+
+1. The current contents of `/var/www/html/` are **backed up** with a timestamp.
+2. The updated files from `/home/ksk/compbiosysnbu-1/` are **copied** to `/var/www/html/`.
+
+### ▶️ Script Behavior
+
+```bash
+#!/bin/bash
+
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BACKUP_DIR="/var/www/backup_html_$TIMESTAMP"
+
+echo "🚀 Starting deployment..."
+echo "📦 Backing up current /var/www/html to $BACKUP_DIR"
+sudo mkdir -p "$BACKUP_DIR"
+sudo cp -r /var/www/html/* "$BACKUP_DIR/"
+
+echo "➡️  Copying new files from /home/ksk/compbiosysnbu-1 ..."
+sudo cp -rf /home/ksk/compbiosysnbu-1/* /var/www/html/
+
+echo "✅ Deployment completed successfully."
+echo "🗃️  Backup is stored at: $BACKUP_DIR"
+---
 ## 🚀 Features
 
 - Modular structure using PHP includes
-- Mobile-friendly and responsive
-- Lightweight and clean design
-- Expandable: can integrate charts, tools, blog, gallery, or database connection
-
-## ✅ To-Do / Future Ideas
-
-- [ ] Add Research Projects gallery and lab photo gallery
-- [ ] Integrate developed tools
-- [ ] Add publication and PDF downloads
-- [ ] Add/modify the contact us form on the contact us page
+- Mobile-friendly & responsive design
+- Lightweight, fast-loading pages
+- Easily expandable: can integrate tools, galleries, charts, blogs, or database connections
 
 ---
 
-© 2025 compbiosysnbu.in All rights reserved.
+## ✅ To-Do / Future Ideas
 
+- [ ] Add publication section with PDF downloads  
+
+---
+
+© 2025 [compbiosysnbu.in](http://compbiosysnbu.in) – All rights reserved.
