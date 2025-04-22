@@ -1,6 +1,6 @@
-# 🧬 Bioinformatics Research Lab Website
+# 🧬 Computational Systems Biology Website
 
-This is a simple, responsive academic website built using **HTML**, **CSS**, and **PHP includes**. It showcases research focus areas, the research team, publications, technologies used, and student dissertation work.
+This responsive academic website built using **HTML**, **CSS**, and **PHP includes**. It showcases research focus areas, the research team, publications, technologies used, and student dissertation work.
 
 ---
 
