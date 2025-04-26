@@ -146,6 +146,18 @@
     border-radius: 10px;
     background-color: #fafafa;
   }
+/* after hyperlinking individual members */
+.team-grid a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-grid a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}  
 /* later added for leader messege */
 /* Two-column layout: profile left, message right */
 .leader-layout {
@@ -219,18 +231,7 @@
   }
 }
 
-/* after hyperlinking individual members */
-.team-grid a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.team-grid a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
 /* Dissertation students list */
 .dissertation-section {

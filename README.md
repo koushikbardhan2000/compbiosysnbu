@@ -1,6 +1,8 @@
-# 🧬 Computational Systems Biology Website
 
-This responsive academic website built using **HTML**, **CSS**, and **PHP includes**. It showcases research focus areas, the research team, publications, technologies used, and student dissertation work.
+# 🧬 Bioinformatics Research Lab Website
+
+This is a simple, responsive academic website built using **HTML**, **CSS**, and **PHP includes**. It showcases research focus areas, the research team, publications, technologies used, and student dissertation work.
+
 
 ---
 
@@ -53,6 +55,7 @@ To be added later.
 ---
 ## ⚙️ Deployment with `deploy_html.sh`
 
+<<<<<<< HEAD
 To simplify deployments from the Git repository to the live server root (`/var/www/`), a script named `deploy_html.sh` is provided.
 Make sure to use `rsync` all the live contents to the editable folder `~/compbiosysnbu-1` with the following command:
 
@@ -68,10 +71,13 @@ Each time changes are pulled from Git:
 
 1. The current contents of `/var/www/html/` are **backed up** with a timestamp.
 2. The updated files from `/home/ksk/compbiosysnbu-1/` are **copied** to `/var/www/html/`.
+<<<<<<< HEAD
 ```bash
 rsync -avh /var/www/html/ /home/ksk/compbiosysnbu-1/
 ```
 If this step is ignored, there might be some inconsistency, and some edits from other sources may not be reflected in the live website. 
+=======
+>>>>>>> 39f83d5 (direct bind version  trying to push it directly to)
 
 ### ▶️ Script Behavior
 
