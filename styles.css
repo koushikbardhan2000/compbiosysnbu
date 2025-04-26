@@ -589,3 +589,47 @@ footer {
 
 
 
+/* Comment section */
+.comments-section {
+  margin-top: 3rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.comments-section h3 {
+  margin-bottom: 1rem;
+}
+
+#commentForm input,
+#commentForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#commentForm button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#commentForm button:hover {
+  background-color: #0056b3;
+}
+
+#commentsContainer {
+  margin-top: 2rem;
+}
+
+.comment {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+}

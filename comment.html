@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> | CSBL</title> <!-- Make changes here -->
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Favicon logo at the browser -->
+  <link href="img/favicon.png" rel="icon">
+</head>
+<body>
+  <header>
+    <h1>COMPUTATIONAL SYSTEM BIOLOGY LAB</h1>
+    <h2>DEPARTMENT OF BIOINFORMATICS</h2>
+    <h3>UNIVERSITY OF NORTH BENGAL</h3>
+    <p>RAJA RAM MOHUNPUR, SILIGURI<br/>DARJEELING-734013</p>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <!-- Make changes here -->
+        <li><a href="index.html"></a>Home</li> <!-- class="active"       add this to li tag and remove the a tag -->
+        <li><a href="about.html">About</a></li>
+        <li><a href="ra.html">Research Areas</a></li>
+        <li><a href="rt.html">Research Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="technology.html">Technology Developed</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <div class="page-title">
+            <h2> Comment Section</h2> <!-- Make changes here -->
+            <div class="underline"></div>
+            <!-- Comments Section -->
+            <div class="comments-section">
+              <h3>Leave a Comment</h3>
+              <form id="commentForm">
+                <input type="text" id="username" placeholder="Your Name" required><br>
+                <textarea id="commentText" placeholder="Your Comment" required></textarea><br>
+                <button type="submit">Post Comment</button>
+              </form>
+
+              <div id="commentsContainer"></div>
+            </div>
+
+          </div>
+
+
+    </main>
+  </div>
+  <script>
+    // Load existing comments on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadComments();
+    });
+
+    // Get the current date and time
+    const comment = { 
+        username, 
+        commentText,
+        timestamp: new Date().toLocaleString() // Adds current date and time
+        };
+
+    
+    // Handle form submit
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const username = document.getElementById('username').value.trim();
+    const commentText = document.getElementById('commentText').value.trim();
+    
+    if (username && commentText) {
+        const comment = { 
+        username, 
+        commentText,
+        timestamp: new Date().toLocaleString() // ⭐ New line
+        };
+        
+        saveComment(comment);
+        addCommentToUI(comment);
+        document.getElementById('commentForm').reset();
+    }
+    });
+
+    
+    // Save comment to localStorage
+    function saveComment(comment) {
+      let comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.unshift(comment); // Add new comment to the beginning
+      localStorage.setItem('comments', JSON.stringify(comments));
+    }
+    
+    // Load all comments from localStorage
+    function loadComments() {
+      const comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.forEach(addCommentToUI);
+    }
+    
+    // Add a single comment to the UI
+    function addCommentToUI(comment) {
+        const commentContainer = document.createElement('div');
+        commentContainer.classList.add('comment');
+        commentContainer.innerHTML = `
+            <strong>${comment.username}</strong> <span style="font-size: 0.8em; color: gray;">(${comment.timestamp})</span>
+            <p>${comment.commentText}</p>
+        `;
+        
+        document.getElementById('commentsContainer').appendChild(commentContainer);
+}
+
+    </script>
+    
+</body>
+<footer>
+    <p>&copy; 2025 Computational System Biology Lab, University of North Bengal. All rights reserved.</p>
+</footer>
+</html>
