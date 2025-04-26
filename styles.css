@@ -146,18 +146,49 @@
     border-radius: 10px;
     background-color: #fafafa;
   }
-/* after hyperlinking individual members */
-.team-grid a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  
+  .team-grid .team-member {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .team-grid .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
 }
 
-.team-grid a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30;
+    vertical-align: middle;
+  }
+  @media (max-width: 768px) {
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+  }
+  
 /* later added for leader messege */
 /* Two-column layout: profile left, message right */
 .leader-layout {
@@ -183,28 +214,26 @@
   border: 2px solid #003366;
 }
 
-/* Leader photo (larger & rectangular) */
-.leader-photo {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border: 2px solid #ccc;
-
-}
 
 .with-photo {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
-.with-photo img {
+/* Members photos */
+/* .with-photo img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #ccc;
-}
+} */
+   /* .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  } */
+
 
 /* Message styling */
 .leader-message {
@@ -407,12 +436,6 @@
 
   .leader-layout {
     grid-template-columns: 1fr;
-  }
-
-  .with-photo img,
-  .leader-photo {
-    width: 80px;
-    height: 80px;
   }
 
   .member-with-photo img {
