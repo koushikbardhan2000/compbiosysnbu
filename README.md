@@ -53,7 +53,7 @@ To be added later.
 ---
 ## ⚙️ Deployment with `deploy_html.sh`
 
-To simplify deployments from the Git repository to the live server root (`/var/www/html/`), a script named `deploy_html.sh` is provided.
+To simplify deployments from the Git repository to the live server root (`/var/www/`), a script named `deploy_html.sh` is provided.
 
 ### 📂 Folder Structure
 
