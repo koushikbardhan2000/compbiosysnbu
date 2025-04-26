@@ -54,6 +54,8 @@ To be added later.
 ## ⚙️ Deployment with `deploy_html.sh`
 
 To simplify deployments from the Git repository to the live server root (`/var/www/`), a script named `deploy_html.sh` is provided.
+Make sure to use `rsync` all the live contents to the editable folder `~/compbiosysnbu-1` with the following command:
+
 
 ### 📂 Folder Structure
 
@@ -66,6 +68,10 @@ Each time changes are pulled from Git:
 
 1. The current contents of `/var/www/html/` are **backed up** with a timestamp.
 2. The updated files from `/home/ksk/compbiosysnbu-1/` are **copied** to `/var/www/html/`.
+```bash
+rsync -avh /var/www/html/ /home/ksk/compbiosysnbu-1/
+```
+If this step is ignored, there might be some inconsistency, and some edits from other sources may not be reflected in the live website. 
 
 ### ▶️ Script Behavior
 
