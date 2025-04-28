@@ -178,7 +178,7 @@
   
   .social-icons img {
     width: 30px;
-    height: 30;
+    height: 30px;
     vertical-align: middle;
   }
   @media (max-width: 768px) {
@@ -199,14 +199,14 @@
 }
 
 /* Leader profile styling */
-.member-with-photo {
+.leader-photo {
   display: flex;
   align-items: center;
   gap: 1rem;
   border: 2px solid #003366;
 }
 /* Smaller team member photos */
-.member-with-photo img {
+.leader-photo-img {
   width: 130px;
   height: 150px;
   border-radius: 8px;
@@ -438,7 +438,7 @@
     grid-template-columns: 1fr;
   }
 
-  .member-with-photo img {
+  .leader-photo-img {
     width: 100px;
     height: 120px;
   }
