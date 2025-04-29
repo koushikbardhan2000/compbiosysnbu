@@ -109,7 +109,6 @@ echo "🗃️  Backup is stored at: $BACKUP_DIR"
 
 ## ✅ To-Do / Future Ideas
 
-- [ ] Add publication section with PDF downloads  
 
 ---
 
