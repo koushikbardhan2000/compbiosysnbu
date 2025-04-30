@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home -->
+  <url>
+    <loc>https://compbiosysnbu.in/</loc>
+    <lastmod>2025-04-26T16:40:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://compbiosysnbu.in/about.html</loc>
+    <lastmod>2025-04-11T06:21:35+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Research Areas (ra) -->
+  <url>
+    <loc>https://compbiosysnbu.in/ra.html</loc>
+    <lastmod>2025-04-11T06:21:35+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Research Team (rt) -->
+  <url>
+    <loc>https://compbiosysnbu.in/rt.html</loc>
+    <lastmod>2025-04-28T08:18:41+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Publications -->
+  <url>
+    <loc>https://compbiosysnbu.in/publications.html</loc>
+    <lastmod>2025-04-11T06:21:35+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Technology Developed -->
+  <url>
+    <loc>https://compbiosysnbu.in/technology.html</loc>
+    <lastmod>2025-04-28T08:39:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://compbiosysnbu.in/contact.html</loc>
+    <lastmod>2025-04-11T06:21:35+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Index -->
+  <url>
+    <loc>https://compbiosysnbu.in/index.html</loc>
+    <lastmod>2025-04-26T16:40:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- DGEAR tool -->
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/index.php</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/User-Manual.pdf</loc>
+    <lastmod>2025-04-28T06:12:56+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/analysis.php</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/analysis-RNA.php</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/results.php</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/contact.php</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/DGEAR/manual.php</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- AttnSeqPPI tool -->
+  <url>
+    <loc>https://compbiosysnbu.in/attnseqppi/</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/attnseqppi/predict</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/attnseqppi/tutorial</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://compbiosysnbu.in/attnseqppi/contact_us</loc>
+    <lastmod>2025-04-30T07:53:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
