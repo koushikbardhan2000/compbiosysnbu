@@ -36,7 +36,25 @@
             <h2>Contact Us</h2><!-- Make changes here -->
             <div class="underline"></div>
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSce9pERZ9n-npE5WIG0mNH7ix_DJ-VLjcsQ7cf52IEj5rJp6g/viewform?embedded=true" width="100%" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSce9pERZ9n-npE5WIG0mNH7ix_DJ-VLjcsQ7cf52IEj5rJp6g/viewform?embedded=true" width="100%" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+         <form action="submit_form.php" method="post" enctype="multipart/form-data">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required="">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required="">
+
+            <label for="phone">Your Mobile / Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="attachment">Attachment (if any):</label>
+            <input type="file" id="attachment" name="attachment">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required=""></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
 
     </main>
   </div>
